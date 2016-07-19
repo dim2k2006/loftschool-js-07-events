@@ -78,13 +78,27 @@ table {
     left: 2%;
     right: 2%;
     border-radius: 2%;
-    border: 5px dashed #DDDFEB; /* #90A8F8 - active color */
+    border: 5px dashed #DDDFEB;
     transform: scale(.1);
     transition: all .5s ease;
 }
 
 .content.inited {
     transform: scale(1);
+}
+
+.content.active {
+    border-color: #90A8F8;
+}
+
+.content__wrapper {
+    position: absolute;
+    display: block;
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+    overflow: hidden;
 }
 
 /* dragBox */
